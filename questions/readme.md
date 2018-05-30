@@ -32,6 +32,7 @@ count := 0
 switch{
   case i == 0 :
   len_list = append(len_list ,count)
+  count = 0 
   case i == 1 :
   count++
   }
