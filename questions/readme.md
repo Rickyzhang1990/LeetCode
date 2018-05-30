@@ -26,3 +26,15 @@ while 1：
 解释: 开头的两位和最后的三位都是连续1，所以最大连续1的个数是 3.
 >
 思路：将列表转化为字符串，然后将字符串按照“0”为分隔符进行分隔，得到一个“1\*N”的列表，统计列表中长度最大的几位最长连续1的次数。
+由于golang中语法工具熟练度不够，对于Go的解法，使用遍历切片的方法，判断条件使用初次尝试使用switch语句，
+```golang
+count := 0 
+switch{
+  case i == 0 :
+  len_list = append(len_list ,count)
+  case i == 1 :
+  count++
+  }
+  len_list = append(len_list ,count)
+  ```
+  最终取len_list的最大值即为最大1的连续次数
