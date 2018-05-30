@@ -17,4 +17,4 @@ while 1：
   else:  
     break   
 #最后反转list1进行计算  
->
+
