@@ -38,4 +38,4 @@ switch{
   }
   len_list = append(len_list ,count)
   ```
-  最终取len_list的最大值即为最大1的连续次数
+  最终取len_list的最大值即为最大1的连续次数,总体来说与python解决方法思路最后相同
