@@ -18,7 +18,3 @@ while 1：
     break   
 #最后反转list1进行计算  
 ```
-```golang
-
-func reverse ( a float, b int ) int {}
-```
