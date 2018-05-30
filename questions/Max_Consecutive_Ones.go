@@ -4,13 +4,12 @@ func findMaxConsecutiveOnes(nums []int) int {
     for _,j := range(nums){
         switch {
             case j == 0 :
-            len_list = append(len_list ,[] int{lenght} ...)
+            len_list = append(len_list ,lenght)
             lenght = 0
-            continue 
             case j == 1 :
             lenght++
         }
-        len_list = append(len_list ,[] int {lenght} ...)
+        len_list = append(len_list ,lenght)
     }
     return max(len_list)
 }
