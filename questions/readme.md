@@ -3,7 +3,7 @@
 2、反转整数  
 在python中解决比较简单，主要运用到列表的操作，反转列表后转化成整数。对于golang,使用golang不如使用python熟练，想到另外一种解决方法。代码如下  
 以435为例，构建两个列表，  
-```
+```python
 list1,list2 = [],[]  
 number = 435  
 while 1：  
