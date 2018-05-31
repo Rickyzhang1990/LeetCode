@@ -37,5 +37,5 @@ switch{
   }
   len_list = append(len_list ,count)
   ```
-  最终取len_list的最大值即为最大1的连续次数,总体来说与`python`解决方法思路最后相同  
+  最终取len_list的最大值即为最大1的连续次数,总体来说与~python~解决方法思路最后相同  
   4、**杨辉三角**  
