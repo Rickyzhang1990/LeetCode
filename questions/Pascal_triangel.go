@@ -1,5 +1,5 @@
 func generate(numRows int) [][]int {
-    list := make([][] int , numRows)
+   list := make([][] int , numRows)
    switch {
        case numRows == 0:
         list = [] [] int {}
