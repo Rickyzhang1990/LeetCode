@@ -64,15 +64,15 @@ switch{
 
 >>Example 1:  
 
->>``Input: J = "aA", S = "aAAbbbb"  
+``Input: J = "aA", S = "aAAbbbb"``
 
->>  Output: 3``  
+``Output: 3``  
 
 >>Example 2:  
 
->>``Input: J = "z", S = "ZZ"    
+``Input: J = "z", S = "ZZ"``
 
->>Output: 0``  
+``Output: 0`` 
 
 >
 
