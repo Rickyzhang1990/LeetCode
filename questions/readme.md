@@ -77,7 +77,7 @@ switch{
 >
 go的解法与学习经验  
 **1、Go中对于字符串的遍历分为两种方法，如下**  
-``
+```golang
 func main() {
     str := "Hello,世界"
     /\*utf-8遍历 遍历的为字节码，为byte,只能填充int8的值\*/
@@ -91,5 +91,24 @@ func main() {
         fmt.Println(ch1)
     }
 }
-``
-
+```
+Go语言中byte和rune实质上就是uint8和int32类型。byte用来强调数据是raw data，而不是数字；而rune用来表示Unicode的code point。
+**2、对于声明的变量，必须要使用，如果没有使用则会编译不通过，参考以下代码**  
+```golang
+func numJewelsInStones(J string, S string) int {
+  var jMap = map[rune]bool{}
+  cnt := 0
+  for _, x := range J {
+    jMap[x] = true
+   }
+   for _, y := range S {
+      _, ok := jMap[y]
+      if ok {
+      fmt.Println(y) /*对于声明的变量y,必须要有对应的操作，只是判断的话并不算used*/
+      cnt += 1}
+    }
+return cnt
+}
+```
+参考discuss中的写法，非常巧妙，直接将没有宝石类别放置到map内，map[jewel] = 1没有类别为1.
+然后遍历自己的石头，使用count += map[自己石头],字符串中字节在map中出现一次，count+1，特别巧妙
