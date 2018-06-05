@@ -92,7 +92,7 @@ func main() {
     }
 }
 ```
-Go语言中byte和rune实质上就是uint8和int32类型。byte用来强调数据是raw data，而不是数字；而rune用来表示Unicode的code point。
+Go语言中byte和rune实质上就是uint8和int32类型。byte用来强调数据是raw data，而不是数字；而rune用来表示Unicode的code point。  
 **2、对于声明的变量，必须要使用，如果没有使用则会编译不通过，参考以下代码**  
 ```golang
 func numJewelsInStones(J string, S string) int {
