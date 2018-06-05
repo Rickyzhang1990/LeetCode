@@ -104,7 +104,7 @@ func numJewelsInStones(J string, S string) int {
    for _, y := range S {
       _, ok := jMap[y]
       if ok {
-      fmt.Println(y) /*对于声明的变量y,必须要有对应的操作，只是判断的话并不算used*/
+      fmt.Println(y) /*对于声明的变量y,必须要有对应的操作，只是判断的话并不算used，对于自己是golang的初学者，感觉是个特别脑残的设定*/
       cnt += 1}
     }
 return cnt
