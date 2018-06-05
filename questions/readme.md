@@ -57,6 +57,18 @@ switch{
 尝试使用go解决该问题，发现无法照搬python的思路去完成。  
 >**1、golang为静态语言，多维数组需声明,而python则不需要  
 2、在golang的切片内，元素的索引为0,1,2,3.....，不存在-1，-2，如果出现这种下标则会给出下标越界的错误，而python的索引-1指的是最后一个元素  
-3、python的二维列表可以通过list [1] [2] = x 赋值，而如果同样方法操作golang，则也会报错下标越界**  
+3、python的二维列表可以通过list [1] [2] = x 赋值，而如果同样方法操作golang，则也会报错下标越界**    
+
+5、**宝石与石头**  
+>You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".  
+>>Example 1:
+
+``Input: J = "aA", S = "aAAbbbb"
+Output: 3``
+>>Example 2:
+
+``Input: J = "z", S = "ZZ"
+Output: 0``
+>
 
 
