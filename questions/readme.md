@@ -75,5 +75,21 @@ switch{
 ``Output: 0`` 
 
 >
-
+go的解法与学习经验  
+**1、Go中对于字符串的遍历分为两种方法，如下**  
+``
+func main() {
+    str := "Hello,世界"
+    /\*utf-8遍历 遍历的为字节码，为byte,只能填充int8的值\*/
+    for i := 0; i < len(str); i++ {
+        ch := str[i]
+        fmt.Println(ch)
+    }
+    fmt.Println("=============>Unicode遍历")
+    //Unicode遍历 为rune 底层类型为一个是uint32，只能填充uint32的值
+    for _, ch1 := range str {
+        fmt.Println(ch1)
+    }
+}
+``
 
