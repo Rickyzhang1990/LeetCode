@@ -113,7 +113,7 @@ return cnt
 参考discuss中的写法，非常巧妙，直接将没有宝石类别放置到map内，map[jewel] = 1没有类别为1.
 然后遍历自己的石头，使用count += map[自己石头],字符串中字节在map中出现一次，count+1，特别巧妙  
 # **6, 键盘同一行**  
-Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard like the image below.   
+给定一个单词列表，只返回可以使用在键盘同一行的字母打印出来的单词。键盘如下图所示。  
 >Example 1:
 ```
 Input: ["Hello", "Alaska", "Dad", "Peace"]
