@@ -1,6 +1,6 @@
-#1、**平衡树**  
+# 1、**平衡树**  
 判断平衡树的问题，对于二叉树的问题，一般都涉及到递归和迭代，使用递归的方法如本次的解决方法。通过对这道题的学习，学习到了如何使用递归去解决问题  
-#2、**反转整数**  
+# 2、**反转整数**  
 在python中解决比较简单，主要运用到列表的操作，反转列表后转化成整数。对于golang,使用golang不如使用python熟练，想到另外一种解决方法。理想中python代码如下  
 以435为例，构建两个列表，  
 ```python
@@ -18,7 +18,7 @@ while 1：
     break   
 #最后反转list1进行计算  
 ```
-#3、**最大连续1的个数**  
+# 3、**最大连续1的个数**  
 思路：列表中有元素为0/1的元素，我们要找到最大连续出现1的长度。如
 >*输入: [1,1,0,1,1,1]*  
 *输出: 3*  
@@ -59,7 +59,7 @@ switch{
 2、在golang的切片内，元素的索引为0,1,2,3.....，不存在-1，-2，如果出现这种下标则会给出下标越界的错误，而python的索引-1指的是最后一个元素  
 3、python的二维列表可以通过list [1] [2] = x 赋值，而如果同样方法操作golang，则也会报错下标越界**    
 
-#5、**宝石与石头**  
+# 5、**宝石与石头**  
 >You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".  
 
 >>Example 1:  
@@ -76,7 +76,7 @@ switch{
 
 >
 go的解法与学习经验  
-##**1、Go中对于字符串的遍历分为两种方法，如下**  
+## **1、Go中对于字符串的遍历分为两种方法，如下**  
 ```golang
 func main() {
     str := "Hello,世界"
@@ -93,7 +93,7 @@ func main() {
 }
 ```
 Go语言中byte和rune实质上就是uint8和int32类型。byte用来强调数据是raw data，而不是数字；而rune用来表示Unicode的code point。  
-##**2、对于声明的变量，必须要使用，如果没有使用则会编译不通过，参考以下代码**  
+## **2、对于声明的变量，必须要使用，如果没有使用则会编译不通过，参考以下代码**  
 ```golang
 func numJewelsInStones(J string, S string) int {
   var jMap = map[rune]bool{}
