@@ -80,7 +80,7 @@ go的解法与学习经验
 ```golang
 func main() {
     str := "Hello,世界"
-    /\*utf-8遍历 遍历的为字节码，为byte,只能填充int8的值\*/
+    /*utf-8遍历 遍历的为字节码，为byte,只能填充int8的值*/
     for i := 0; i < len(str); i++ {
         ch := str[i]
         fmt.Println(ch)
