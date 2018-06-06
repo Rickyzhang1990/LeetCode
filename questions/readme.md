@@ -1,6 +1,6 @@
-1、**平衡树**  
+#1、**平衡树**  
 判断平衡树的问题，对于二叉树的问题，一般都涉及到递归和迭代，使用递归的方法如本次的解决方法。通过对这道题的学习，学习到了如何使用递归去解决问题  
-2、**反转整数**  
+#2、**反转整数**  
 在python中解决比较简单，主要运用到列表的操作，反转列表后转化成整数。对于golang,使用golang不如使用python熟练，想到另外一种解决方法。理想中python代码如下  
 以435为例，构建两个列表，  
 ```python
@@ -18,7 +18,7 @@ while 1：
     break   
 #最后反转list1进行计算  
 ```
-3、**最大连续1的个数**  
+#3、**最大连续1的个数**  
 思路：列表中有元素为0/1的元素，我们要找到最大连续出现1的长度。如
 >*输入: [1,1,0,1,1,1]*  
 *输出: 3*  
@@ -38,7 +38,7 @@ switch{
   len_list = append(len_list ,count)
   ```
   最终取len_list的最大值即为最大1的连续次数,总体来说与.python.解决方法思路最后相同  
-  4、**杨辉三角**  
+ # 4、**杨辉三角**  
 帕斯卡三角，在我国被称为杨辉三角，整体题目如下题
 >给定一个非负整数 numRows，生成杨辉三角的前 numRows 行。
 >在杨辉三角中，每个数是它左上方和右上方的数的和。  
@@ -59,7 +59,7 @@ switch{
 2、在golang的切片内，元素的索引为0,1,2,3.....，不存在-1，-2，如果出现这种下标则会给出下标越界的错误，而python的索引-1指的是最后一个元素  
 3、python的二维列表可以通过list [1] [2] = x 赋值，而如果同样方法操作golang，则也会报错下标越界**    
 
-5、**宝石与石头**  
+#5、**宝石与石头**  
 >You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".  
 
 >>Example 1:  
@@ -76,7 +76,7 @@ switch{
 
 >
 go的解法与学习经验  
-**1、Go中对于字符串的遍历分为两种方法，如下**  
+##**1、Go中对于字符串的遍历分为两种方法，如下**  
 ```golang
 func main() {
     str := "Hello,世界"
@@ -93,7 +93,7 @@ func main() {
 }
 ```
 Go语言中byte和rune实质上就是uint8和int32类型。byte用来强调数据是raw data，而不是数字；而rune用来表示Unicode的code point。  
-**2、对于声明的变量，必须要使用，如果没有使用则会编译不通过，参考以下代码**  
+##**2、对于声明的变量，必须要使用，如果没有使用则会编译不通过，参考以下代码**  
 ```golang
 func numJewelsInStones(J string, S string) int {
   var jMap = map[rune]bool{}
@@ -111,4 +111,17 @@ return cnt
 }
 ```
 参考discuss中的写法，非常巧妙，直接将没有宝石类别放置到map内，map[jewel] = 1没有类别为1.
-然后遍历自己的石头，使用count += map[自己石头],字符串中字节在map中出现一次，count+1，特别巧妙
+然后遍历自己的石头，使用count += map[自己石头],字符串中字节在map中出现一次，count+1，特别巧妙  
+# **6, 键盘同一行**  
+Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard like the image below.   
+>Example 1:
+```
+Input: ["Hello", "Alaska", "Dad", "Peace"]
+Output: ["Alaska", "Dad"]
+```
+Note:
+
+    You may use one character in the keyboard more than once.
+    You may assume the input string will only contain letters of alphabet.
+>  
+python思路： 判断每个单词的每个字母是否在三个列表内，如果在A列表内，resultA添加元素1，如果不在A内添加0，同理判断B和C列表内的情况，最后判断三个列表的情况，如果其中一个列表全部1，则返回该单词。具体见脚本
