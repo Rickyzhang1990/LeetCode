@@ -124,4 +124,16 @@ Note:
     You may use one character in the keyboard more than once.
     You may assume the input string will only contain letters of alphabet.
 >  
-python思路： 判断每个单词的每个字母是否在三个列表内，如果在A列表内，resultA添加元素1，如果不在A内添加0，同理判断B和C列表内的情况，最后判断三个列表的情况，如果其中一个列表全部1，则返回该单词。具体见脚本
+python思路： 判断每个单词的每个字母是否在三个列表内，如果在A列表内，resultA添加元素1，如果不在A内添加0，同理判断B和C列表内的情况，最后判断三个列表的情况，如果其中一个列表全部1，则返回该单词。具体见脚本  
+# **7、根据字符出现频率排序**  
+给定一个字符串，请将字符串里的字符按照出现的频率降序排列。
+
+示例 1:
+>**输入**:
+"tree"
+**输出**：
+"eert"
+**解释**：
+'e'出现两次，'r'和't'都只出现一次。
+因此'e'必须出现在'r'和't'之前。此外，"eetr"也是一个有效的答案。
+>
