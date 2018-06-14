@@ -181,8 +181,8 @@ golang版本的还在构思中，争取本周完成
 if len(s) == 0：  return 0 
 ```    
 第二个问题：当字符串为长度为1时，最终子串的列表没有成功添加结果，因而在循环后添加语句  
-```
-python result.append(substr)
+```python 
+result.append(substr)
 ```
 第三个问题：字符串为“dvdf”和“ckilbkd”时，第二个“d”和第二个“k”均存在之前的字符串中，需要将遇到重复之前的字符串保留，然后截取“dv”中的“d”以及“ckilb”中的“ck”,加上后出现的重复字符串。  
 最后得到了最后的结果，详细见脚本
