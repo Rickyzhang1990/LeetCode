@@ -3,12 +3,12 @@ func romanToInt(s string) int {
     var result [] string
     for {
         if len([]rune(s)) >1 {
-        if _,ok := dic[s[0:2]];ok{
-            result = append(result ,s[0:2])
-            s = s[2:]
-        }else{
-            result = append(result ,s[0:1])
-            s = s[1:]}
+            if _,ok := dic[s[0:2]];ok{
+                result = append(result ,s[0:2])
+                s = s[2:]
+            }else{
+                result = append(result ,s[0:1])
+                s = s[1:]}
         }else{
             result = append(result ,s)
             break 
