@@ -245,5 +245,7 @@ python中使用[find方法](http://www.runoob.com/python3/python3-string-find.ht
 思路：将数字转化为字符串，获得每一位数的index，使用Python中的find函数，发现第一个出现的字符的index，获得index的列表，将得到的列表反转，如果是回文数则两个列表是完全一致的。  具体见脚本 。   
 a  little busy ,stop for a while ...,to be continue     
 
-# **18、重复列表 **  
+# **18、重复列表**    
+# **19、最长公共前缀**   
+好多种列表为空的情况没有考虑到，导致提交了多次错误的答案，以后考虑问题一定要全面，将极端情况考虑在内。  
 
