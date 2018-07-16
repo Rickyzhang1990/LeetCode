@@ -239,7 +239,11 @@ python中使用[find方法](http://www.runoob.com/python3/python3-string-find.ht
 **解释:** 不需要交换。   
 >
 思路，将数字转化为列表，每个列表为各位数字的列表。对列表进行遍历，每次交换两个index下的数字，然后组成数字与原数字进行比较，如果大于原数字，则大数为新数字，否则为原数字。考察了列表的操作。解决方法见脚本。    
-a  little busy ,stop for a while ...,to be continue   
+  
 # **17、回文数**  
 给一个数字，比如`121`为回文数，而`-121`则不能称作回文数。写一个程序用来判断数字是不是回文数。  
-思路：将数字转化为字符串，获得每一位数的index，使用Python中的find函数，发现第一个出现的字符的index，获得index的列表，将得到的列表反转，如果是回文数则两个列表是完全一致的。  具体见脚本 。
+思路：将数字转化为字符串，获得每一位数的index，使用Python中的find函数，发现第一个出现的字符的index，获得index的列表，将得到的列表反转，如果是回文数则两个列表是完全一致的。  具体见脚本 。   
+a  little busy ,stop for a while ...,to be continue     
+
+# **18、重复列表 **  
+
