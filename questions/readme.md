@@ -249,5 +249,7 @@ a  little busy ,stop for a while ...,to be continue
 # **19、最长公共前缀**   
 好多种列表为空的情况没有考虑到，导致提交了多次错误的答案，以后考虑问题一定要全面，将极端情况考虑在内。   
 # **20、字母异构词** 
-题目见 [字母异构词](https://leetcode-cn.com/problems/valid-anagram/description/)
+题目见 [字母异构词](https://leetcode-cn.com/problems/valid-anagram/description/)  
+# **21、求众数**  
+题目描述见[求众数](https://leetcode-cn.com/problems/majority-element/description/)
 
