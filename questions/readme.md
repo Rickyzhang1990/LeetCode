@@ -251,5 +251,7 @@ a  little busy ,stop for a while ...,to be continue
 # **20、字母异构词** 
 题目见 [字母异构词](https://leetcode-cn.com/problems/valid-anagram/description/)  
 # **21、求众数**  
-题目描述见[求众数](https://leetcode-cn.com/problems/majority-element/description/)
+题目描述见[求众数](https://leetcode-cn.com/problems/majority-element/description/)  
+# **22、分糖果**  
+题目描述见[分糖果](https://leetcode-cn.com/problems/distribute-candies/description/)  
 
